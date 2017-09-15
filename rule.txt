@@ -1,0 +1,37 @@
+	
+
+	1. Find out layout type
+		# Top and Bottom - Vertical
+		# Side by side - Horizontal
+
+
+	2. Find out the element type:
+		# Block
+		# Inline
+
+	3. Find out:
+		# If display: block need to be used
+		# If float: left/right need to be used
+		
+		Conditions:
+		# If Element is block and layout is Top and Botttom
+		  Do nothing because these elements sits by default Top and bottom because of their default css value
+		  display: block;
+
+		# If Element is inline and layout is top and bottom
+		  Use display: block
+
+		# Either Block element or Inline element, if layout is side by side:
+		  Use float: left for left side, float: right for right side
+
+		  If float used, clear must be used.
+		
+		  .clear {
+			clear: both;
+			display: block;
+			}
+
+	4. Find out other default css value of the element.
+
+	5. Put css values according to layout.
+		  
